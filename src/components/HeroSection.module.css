@@ -10,16 +10,41 @@
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+}
+
+.logoWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.splitLayout {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.2fr;
     align-items: center;
     gap: 2rem;
-    height: 100%;
-    padding-bottom: 5rem;
+    width: 100%;
 }
 
 .textColumn {
     z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 10px 20px rgba(93, 64, 55, 0.1));
 }
 
 .title {
@@ -34,19 +59,7 @@
     color: var(--color-text-light);
     line-height: 1.6;
     margin-bottom: 2.5rem;
-}
-
-.pills {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: var(--color-cream);
-    color: var(--color-orange-bakery);
-    border-radius: 20px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    margin-bottom: 1.5rem;
+    max-width: 500px;
 }
 
 .imageColumn {
@@ -54,13 +67,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .heroImageWrapper {
     position: relative;
-    width: 120%;
-    /* Slightly larger overlap */
-    margin-left: -10%;
+    width: 110%;
+    margin-right: -10%;
 }
 
 .heroImage {
@@ -76,26 +89,31 @@
     padding: 1rem;
     border-radius: 50%;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    z-index: 20;
 }
 
 .badgeText {
     font-weight: bold;
     color: var(--color-green-matcha);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 @media (max-width: 900px) {
-    .content {
+    .splitLayout {
         grid-template-columns: 1fr;
         text-align: center;
-        padding-top: 4rem;
-        gap: 1rem;
+        gap: 3rem;
+    }
+
+    .textColumn {
+        align-items: center;
+        text-align: center;
     }
 
     .title {
@@ -104,6 +122,6 @@
 
     .heroImageWrapper {
         width: 100%;
-        margin-left: 0;
+        margin-right: 0;
     }
 }

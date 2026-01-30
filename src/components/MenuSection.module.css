@@ -2,6 +2,53 @@
     padding: 4rem 0 8rem;
     background-color: var(--color-cream);
     position: relative;
+    overflow: hidden;
+    /* Added to clip floating shapes */
+}
+
+.parallaxBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.shape1,
+.shape2,
+.shape3 {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.1;
+}
+
+.shape1 {
+    width: 300px;
+    height: 300px;
+    background: var(--color-green-matcha);
+    top: 10%;
+    left: -50px;
+    filter: blur(40px);
+}
+
+.shape2 {
+    width: 200px;
+    height: 200px;
+    background: var(--color-orange-bakery);
+    top: 40%;
+    right: -20px;
+    filter: blur(30px);
+}
+
+.shape3 {
+    width: 150px;
+    height: 150px;
+    border: 10px solid var(--color-brown-choco);
+    bottom: 10%;
+    left: 10%;
+    opacity: 0.05;
 }
 
 .headingWrapper {

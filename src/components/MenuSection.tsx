@@ -73,7 +73,14 @@ const itemAnim: Variants = {
 export default function MenuSection() {
   return (
     <section className={styles.section} id="menu">
-      <div className="container">
+      {/* Floating Parallax Background Elements */}
+      <div className={styles.parallaxBg}>
+          <motion.div animate={{ y: [0, -20, 0] }} transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }} className={styles.shape1} />
+          <motion.div animate={{ y: [0, 30, 0] }} transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }} className={styles.shape2} />
+          <motion.div animate={{ rotate: 360 }} transition={{ duration: 20, repeat: Infinity, ease: "linear" }} className={styles.shape3} />
+      </div>
+
+      <div className="container" style={{ position: 'relative', zIndex: 2 }}>
         <div className={styles.headingWrapper}>
              <h2 className={styles.heading}>Freshly Baked Menu</h2>
              <p className={styles.subHeading}>Choose your fluffy happiness</p>

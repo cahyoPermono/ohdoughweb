@@ -1,10 +1,19 @@
 import styles from './ContactFooter.module.css';
 
+import Image from 'next/image';
+
 export default function ContactFooter() {
   return (
     <footer className={styles.footer} id="contact">
       <div className="container">
         <div className={styles.content}>
+          <Image 
+             src="/images/logo.png" 
+             alt="Oh! Dough Logo" 
+             width={100} 
+             height={100}
+             style={{ opacity: 0.9 }}
+          />
           <h2 className={styles.heading}>Ready to Taste the Cloud?</h2>
           <p className={styles.text}>
             Our pastries are made fresh to order in our cold kitchen.

@@ -1,0 +1,45 @@
+.marqueeContainer {
+    width: 100%;
+    padding: 1.5rem 0;
+    background-color: var(--color-orange-bakery);
+    color: var(--color-white);
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    z-index: 5;
+    transform: rotate(-1deg) scale(1.05);
+    /* Slight tilt for 'cool' factor */
+    margin: 2rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.track {
+    display: inline-block;
+    animation: scroll 20s linear infinite;
+}
+
+.item {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 1rem;
+}
+
+.dot {
+    color: var(--color-white);
+    opacity: 0.5;
+    margin: 0 1rem;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+        /* Adjust based on duplication count */
+    }
+}
