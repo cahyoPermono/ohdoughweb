@@ -1,0 +1,90 @@
+.heroContainer {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    /* Taller hero */
+    min-height: 600px;
+    background: radial-gradient(circle at 70% 50%, #FAF3E0 0%, #F4E4BC 100%);
+    overflow: hidden;
+}
+
+.canvasWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    /* Left align content */
+}
+
+.contentBox {
+    pointer-events: auto;
+    max-width: 500px;
+}
+
+.title {
+    font-size: 6rem;
+    font-weight: 800;
+    color: var(--color-chocolate-dark);
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    letter-spacing: -3px;
+}
+
+.dot {
+    color: var(--color-gold);
+}
+
+.subtitle {
+    font-size: 1.8rem;
+    color: var(--color-accent);
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.ctaButton {
+    display: inline-block;
+    padding: 1.2rem 3rem;
+    background: var(--color-chocolate-dark);
+    color: #FAF3E0;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 10px 30px rgba(62, 39, 35, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+}
+
+@media (max-width: 768px) {
+    .overlay {
+        padding-left: 0;
+        justify-content: center;
+        text-align: center;
+        background: rgba(250, 243, 224, 0.6);
+        /* Fade bg for readability on mobile */
+        backdrop-filter: blur(2px);
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+
+    .subtitle {
+        font-size: 1.4rem;
+    }
+}
