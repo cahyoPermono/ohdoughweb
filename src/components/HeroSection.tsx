@@ -4,11 +4,11 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import styles from './HeroSection.module.css';
 import CurvedDivider from './CurvedDivider';
+import { prefixPath } from '../utils/config';
 
 export default function HeroSection() {
   return (
     <section className={styles.heroWrapper}>
-      <div className="container" style={{ position: 'relative', height: '100%' }}>
       <div className="container" style={{ position: 'relative', height: '100%' }}>
         <div className={styles.content}>
           {/* Logo Centered Top */}
@@ -19,7 +19,7 @@ export default function HeroSection() {
             className={styles.logoWrapper}
           >
              <Image 
-                src="/images/logo.png" 
+                src={prefixPath("/images/logo.png")} 
                 alt="Oh! Dough Logo" 
                 width={220} 
                 height={220} 
@@ -70,7 +70,7 @@ export default function HeroSection() {
                   className={styles.heroImageWrapper}
                >
                    <Image 
-                      src="/images/ohdough_hero_composition_1769764886785.png" 
+                      src={prefixPath("/images/ohdough_hero_composition_1769764886785.png")} 
                       alt="OhDough Artisan Bakery" 
                       width={800} 
                       height={800} 

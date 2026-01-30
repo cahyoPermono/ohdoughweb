@@ -4,27 +4,25 @@ import { useState } from 'react';
 import styles from './MenuSection.module.css';
 import { motion, Variants, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
+import { prefixPath } from '../utils/config';
 
 // Map specific products to images (fallback to generic if not matched)
 const getImage = (name: string) => {
     // Real photos provided by user (Enhanced Style)
-    if (name.toLowerCase().includes('tuna') || name.toLowerCase().includes('ocean') || name.toLowerCase().includes('mayo')) return '/images/enhanced_tuna_mayo.png';
-    if (name.toLowerCase().includes('sausage') || name.toLowerCase().includes('osaka')) return '/images/enhanced_sausage_roll.png';
-    if (name.toLowerCase().includes('garlic')) return '/images/enhanced_garlic_bread.png';
-    if (name.toLowerCase().includes('melon')) return '/images/enhanced_melon_pan.png';
-    if (name.toLowerCase().includes('teriyaki')) return '/images/enhanced_teriyaki_bun.png';
-    if (name.toLowerCase().includes('darkluscious')) return '/images/bomboloni_darkluscious.png';
-    if (name.toLowerCase().includes('cookie') || name.toLowerCase().includes('oreo')) return '/images/bomboloni_cookie_cloud.png';
-    if (name.toLowerCase().includes('velvet')) return '/images/bomboloni_velvet_noir.png';
-    if (name.toLowerCase().includes('cheezu')) return '/images/bomboloni_snowy_cheezu.png';
-    if (name.toLowerCase().includes('matcha')) return '/images/bomboloni_matcha_zen.png';
-    if (name.toLowerCase().includes('almond')) return '/images/bomboloni_almond_truffle.png';
+    if (name.toLowerCase().includes('tuna') || name.toLowerCase().includes('ocean') || name.toLowerCase().includes('mayo')) return prefixPath('/images/enhanced_tuna_mayo.png');
+    if (name.toLowerCase().includes('sausage') || name.toLowerCase().includes('osaka')) return prefixPath('/images/enhanced_sausage_roll.png');
+    if (name.toLowerCase().includes('garlic')) return prefixPath('/images/enhanced_garlic_bread.png');
+    if (name.toLowerCase().includes('melon')) return prefixPath('/images/enhanced_melon_pan.png');
+    if (name.toLowerCase().includes('teriyaki')) return prefixPath('/images/enhanced_teriyaki_bun.png');
+    if (name.toLowerCase().includes('darkluscious')) return prefixPath('/images/bomboloni_darkluscious.png');
+    if (name.toLowerCase().includes('cookie') || name.toLowerCase().includes('oreo')) return prefixPath('/images/bomboloni_cookie_cloud.png');
+    if (name.toLowerCase().includes('velvet')) return prefixPath('/images/bomboloni_velvet_noir.png');
+    if (name.toLowerCase().includes('cheezu')) return prefixPath('/images/bomboloni_snowy_cheezu.png');
+    if (name.toLowerCase().includes('matcha')) return prefixPath('/images/bomboloni_matcha_zen.png');
+    if (name.toLowerCase().includes('almond')) return prefixPath('/images/bomboloni_almond_truffle.png');
 
     // Generated fallbacks
-    if (name.toLowerCase().includes('chocolate')) return '/images/bomboloni_chocolate_1769764908057.png';
-    if (name.toLowerCase().includes('greentea') || name.toLowerCase().includes('matcha')) return '/images/bomboloni_matcha_1769764926116.png';
-    if (name.toLowerCase().includes('bun') || name.toLowerCase().includes('bread')) return '/images/japanese_milk_bread_1769764947467.png';
-    return '/images/bomboloni_chocolate_1769764908057.png'; // Default
+    return prefixPath('/images/bomboloni_chocolate_1769764908057.png'); // Default
 };
 
 const menuItems = [
