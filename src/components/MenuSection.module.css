@@ -126,7 +126,9 @@
 .pimg {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    /* Ensures raw photos fill the circle nicely */
+    border-radius: 50%;
 }
 
 .cardContent {
