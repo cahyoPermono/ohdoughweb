@@ -92,7 +92,6 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      </div>
       
       {/* Curved Divider at the bottom */}
       <CurvedDivider color="#FFFCF5" type="bottom" />
