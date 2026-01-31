@@ -4,6 +4,7 @@ import ContactFooter from '@/components/ContactFooter';
 import ScrollProgress from '@/components/ScrollProgress';
 import Marquee from '@/components/Marquee';
 import SmoothScroll from '@/components/SmoothScroll';
+import FAQSection from '@/components/FAQSection';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <HeroSection />
       <Marquee />
       <MenuSection />
+      <FAQSection />
       <ContactFooter />
     </main>
   );

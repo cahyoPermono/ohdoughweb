@@ -56,7 +56,7 @@ export default function HeroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
               >
-                 <a href="#menu" className="btn-primary" style={{ padding: '1rem 3rem', fontSize: '1.2rem' }}>
+                 <a href="https://wa.me/6282139832969" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ padding: '1rem 3rem', fontSize: '1.2rem' }}>
                    Order Now
                  </a>
               </motion.div>
