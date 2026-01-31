@@ -70,7 +70,7 @@ export default function HeroSection() {
                   className={styles.heroImageWrapper}
                >
                    <Image 
-                      src={prefixPath("/images/ohdough_hero_composition_v6.png")} 
+                      src={prefixPath("/images/ohdough_hero_composition_v8.png")} 
                       alt="OhDough Artisan Bakery" 
                       width={800} 
                       height={800} 
