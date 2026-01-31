@@ -13,6 +13,7 @@ const getImage = (name: string) => {
     if (name.toLowerCase().includes('sausage') || name.toLowerCase().includes('osaka')) return prefixPath('/images/enhanced_sausage_roll.png');
     if (name.toLowerCase().includes('garlic')) return prefixPath('/images/enhanced_garlic_bread.png');
     if (name.toLowerCase().includes('melon')) return prefixPath('/images/enhanced_melon_pan.png');
+    if (name.toLowerCase().includes('vanilla')) return prefixPath('/images/enhanced_vanilla_choco_cheese.png');
     if (name.toLowerCase().includes('teriyaki')) return prefixPath('/images/enhanced_teriyaki_bun.png');
     if (name.toLowerCase().includes('darkluscious')) return prefixPath('/images/bomboloni_darkluscious.png');
     if (name.toLowerCase().includes('cookie') || name.toLowerCase().includes('oreo')) return prefixPath('/images/bomboloni_cookie_cloud.png');
@@ -20,6 +21,8 @@ const getImage = (name: string) => {
     if (name.toLowerCase().includes('cheezu')) return prefixPath('/images/bomboloni_snowy_cheezu.png');
     if (name.toLowerCase().includes('matcha')) return prefixPath('/images/bomboloni_matcha_zen.png');
     if (name.toLowerCase().includes('almond')) return prefixPath('/images/bomboloni_almond_truffle.png');
+    if (name.toLowerCase().includes('royal') && name.toLowerCase().includes('cloud') && name.toLowerCase().includes('9')) return prefixPath('/images/enhanced_royal_cloud_9.png');
+    if (name.toLowerCase().includes('royal') || name.toLowerCase().includes('loaf')) return prefixPath('/images/enhanced_royal_cloud_loaf.png');
 
     // Generated fallbacks
     return prefixPath('/images/bomboloni_chocolate_1769764908057.png'); // Default
@@ -64,6 +67,7 @@ const menuItems = [
     description: 'Perfect for sharing moments.',
     items: [
       { name: 'Royal Cloud Loaf', desc: 'Premium Roti Sobek for special occasions', price: 'Pre-order', story: "The crown jewel. Made for sharing, this loaf represents connection and the warmth of breaking bread together with loved ones." },
+      { name: 'Royal Cloud 9', desc: 'Exquisite 3x3 Premium Mosaic Loaf', price: 'Pre-order', story: "Nine pillows of perfection. Crafted for grand celebrations, this square mosaic masterpiece offers the ultimate pull-apart experience. A symphony of softness." },
     ]
   }
 ];
