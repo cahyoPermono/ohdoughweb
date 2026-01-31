@@ -2,13 +2,15 @@ import styles from './ContactFooter.module.css';
 
 import Image from 'next/image';
 
+import { prefixPath } from '../utils/config';
+
 export default function ContactFooter() {
   return (
     <footer className={styles.footer} id="contact">
       <div className="container">
         <div className={styles.content}>
           <Image 
-             src="/images/logo.png" 
+             src={prefixPath("/images/logo.png")} 
              alt="Oh! Dough Logo" 
              width={100} 
              height={100}
