@@ -67,7 +67,8 @@ const menuItems = [
     description: 'Perfect for sharing moments.',
     items: [
       { name: 'Royal Cloud Loaf', desc: 'Premium Roti Sobek for special occasions', price: 'Pre-order', story: "The crown jewel. Made for sharing, this loaf represents connection and the warmth of breaking bread together with loved ones." },
-      { name: 'Royal Cloud 9', desc: 'Exquisite 3x3 Premium Mosaic Loaf', price: 'Pre-order', story: "Nine pillows of perfection. Crafted for grand celebrations, this square mosaic masterpiece offers the ultimate pull-apart experience. A symphony of softness." },
+      { name: 'Royal Cloud Loaf', desc: 'Premium Roti Sobek for special occasions', price: 'Pre-order', story: "The crown jewel. Made for sharing, this loaf represents connection and the warmth of breaking bread together with loved ones." },
+      // { name: 'Royal Cloud 9', desc: 'Exquisite 3x3 Premium Mosaic Loaf', price: 'Pre-order', story: "Nine pillows of perfection. Crafted for grand celebrations, this square mosaic masterpiece offers the ultimate pull-apart experience. A symphony of softness." },
     ]
   }
 ];

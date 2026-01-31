@@ -47,7 +47,7 @@ export default function HeroSection() {
                 transition={{ delay: 0.3 }}
                 className={styles.subtitle}
               >
-                Premium Bomboloni and Japanese Soft Milk Bread.
+                Premium Bomboloni and Soft Milk Bread.
                 <br/>Freshly crafted daily in our cold kitchen.
               </motion.p>
               
