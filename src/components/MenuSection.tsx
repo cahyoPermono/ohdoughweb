@@ -19,8 +19,8 @@ const getImage = (name: string) => {
     if (name.toLowerCase().includes('cookie') || name.toLowerCase().includes('oreo')) return prefixPath('/images/bomboloni_cookie_cloud.png');
     if (name.toLowerCase().includes('velvet')) return prefixPath('/images/bomboloni_velvet_noir.png');
     if (name.toLowerCase().includes('cheezu')) return prefixPath('/images/bomboloni_snowy_cheezu.png');
-    if (name.toLowerCase().includes('matcha')) return prefixPath('/images/bomboloni_matcha_zen.png');
-    if (name.toLowerCase().includes('almond')) return prefixPath('/images/bomboloni_almond_truffle.png');
+    if (name.toLowerCase().includes('matcha')) return prefixPath('/images/bomboloni_matcha_zen_slices.png');
+    if (name.toLowerCase().includes('almond')) return prefixPath('/images/bomboloni_almond_truffle_slices.png');
     if (name.toLowerCase().includes('royal') && name.toLowerCase().includes('cloud') && name.toLowerCase().includes('9')) return prefixPath('/images/enhanced_royal_cloud_9.png');
     if (name.toLowerCase().includes('royal') || name.toLowerCase().includes('loaf')) return prefixPath('/images/enhanced_royal_cloud_loaf.png');
 
@@ -37,11 +37,11 @@ const menuItems = [
     description: 'Signature Bomboloni with thick whipped cream filling.',
     items: [
       { name: 'Velvet Noir', desc: 'Chocolate Ganache', price: '15k', story: "Dark chocolate meets cloud-like dough. A balance of bitter and sweet, representing the duality of pure indulgence. Born from a midnight craving, this is our ode to the night." },
-      { name: 'Matcha Zen Crunch', desc: 'Greentea with Almond Edge', price: '18k', story: "A bite of tranquility. Premium Uji matcha brings an earthy depth, harmonized by the crunch of roasted almonds. Inspired by the zen gardens of Kyoto." },
+      { name: 'Matcha Zen Crunch', desc: 'Greentea with Sliced Almonds', price: '18k', story: "A bite of tranquility. Premium Uji matcha brings an earthy depth, harmonized by the crunch of roasted sliced almonds. Inspired by the zen gardens of Kyoto." },
       { name: 'Snowy Cheezu', desc: 'Cheese with Cream Cheese', price: '18k', story: "Inspired by winter's first snow. Savory cheddar meets sweet cream, creating a nostalgic comfort in every fluffy bite. A warm hug in pasture form." },
       { name: 'Cookie Cloud', desc: 'Oreo with Vla', price: '16k', story: "A playful twist on childhood favorites. The crunch of cookies against the softest dough brings back memories of milk-dunking joy." },
       { name: 'Darkluscious', desc: 'Classic Meses with Vla', price: '15k', story: "The classic refined. Thousands of chocolate sprinkles provide texture, while the vla filling offers a smooth, creamy embrace. Timeless." },
-      { name: 'Almond Truffle', desc: 'Almond Chocolate', price: '18k', story: "Elegance in a pastry. Nutty aromas of toasted almond dance with rich chocolate ganache, a sophisticated treat for the discerning palate." },
+      { name: 'Almond Truffle', desc: 'Almond Chocolate with Slices', price: '18k', story: "Elegance in a pastry. Nutty aromas of toasted sliced almonds dance with rich chocolate ganache, a sophisticated treat for the discerning palate." },
     ]
   },
   {
