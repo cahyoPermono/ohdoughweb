@@ -12,9 +12,9 @@ const reviews = [
     rating: 5
   },
   {
-    name: "Dimas A.",
-    role: "Verified Buyer",
-    text: "Akhirnya nemu Japanese Milk Bread yang autentik di Jombang. Royal Cloud 9-nya wajib banget buat hantaran.",
+    name: "Mimi",
+    role: "Cloud Lover from Jember",
+    text: "Rasanya nggak kalah sama donut terkenal! Sebagai pecinta whipped cream, ini beneran premium & nggak abal-abal. Isian dan toppingnya melimpah sampai tumpah-tumpah. Worth every penny!",
     rating: 5
   },
   {
