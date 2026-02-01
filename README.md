@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OhDough Bakery Website 🥯☁️
 
-## Getting Started
+A premium, artisanal website for **OhDough Jombang**, featuring a high-end "Japanese Flat Lay" aesthetic, interactive menu, and seamless WhatsApp ordering integration.
 
-First, run the development server:
+**Live Site**: [ohdoughbakery.com](https://ohdoughbakery.com)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## ✨ key Features
+
+- **Aesthetic Visuals**: Custom-generated Hero compositions (V10) featuring authentic product representations (e.g., "Boat-style" Osaka Roll).
+- **Premium Animations**: Smooth entrance effects, glassmorphism UI, and interactive "Pop-out" menu cards using `Framer Motion`.
+- **SEO Optimized**: Ranked for keywords like "Bomboloni Jombang", "Roti Sobek Premium", populated with JSON-LD Schema Markup.
+- **Social Proof**: Real customer testimonials and "Social Share" preview cards (Open Graph).
+- **Mobile First**: Fully responsive design that works perfectly on all devices.
+- **PWA Ready**: Installable to home screen via Web Manifest.
+- **Direct Order**: "Smart Link" integration to Admin WhatsApp.
+
+## 🛠 Tech Stack
+
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Directory)
+- **Styling**: CSS Modules (Vanilla CSS for maximum control)
+- **Animation**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: Lucide React
+- **Analytics**: Google Analytics 4 (GA4)
+- **Deployment**: GitHub Pages (Static Export)
+
+## 🚀 Getting Started
+
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/StartYourOwnRepo/ohdoughweb.git
+    cd ohdoughweb
+    ```
+
+2.  **Install dependencies** (using pnpm):
+    ```bash
+    pnpm install
+    ```
+
+3.  **Run Development Server**:
+    ```bash
+    pnpm dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## 📁 Project Structure
+
+```
+src/
+├── app/              # Next.js App Router & Layouts
+├── components/       # UI Components (Hero, Menu, FAQ, etc.)
+│   ├── HeroSection.tsx   # The main visual hook
+│   ├── MenuSection.tsx   # Product list with pop-out cards
+│   └── ...
+├── utils/            # Helper functions (path prefixing)
+└── ...
+public/
+├── images/           # High-quality assets & Generated AI visuals
+├── manifest.json     # PWA Configuration
+└── sitemap.xml       # SEO Sitemap
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Design Philosophy
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The design pivots from a standard 3D web look to a **"Delectable 2D"** style. We use:
+- **Warm Color Palette**: Matcha Green, Bakery Orange, and Chocolate Brown.
+- **Curved Dividers**: To create a soft, "dough-like" flow between sections.
+- **Clean Typography**: Premium Serif for headings, legible Sans for body text.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Created with ❤️ for OhDough Jombang.*
