@@ -6,9 +6,9 @@ import CurvedDivider from './CurvedDivider';
 
 const reviews = [
   {
-    name: "Rina S.",
-    role: "Cloud Lover",
-    text: "Bomboloninya bener-bener kayak awan! Empuk banget dan isiannya melimpah ruah. Matcha Zen favoritku!",
+    name: "Nurika Nadhifa",
+    role: "Cloud Lover from Megaluh",
+    text: "Donatnya gede, makan satu aja udah kenyang & toppingnya pas. Roti Tuna-nya juara, kerasa banget bahannya premium. Anakku (Abidzar) sampai lahap banget makan Roti Sosis-nya!",
     rating: 5
   },
   {
