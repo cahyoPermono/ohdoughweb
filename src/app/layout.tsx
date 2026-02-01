@@ -20,6 +20,29 @@ export const metadata: Metadata = {
     icon: '/images/logo.png',
     apple: '/images/logo.png',
   },
+  manifest: '/manifest.json',
+  openGraph: {
+    title: 'OhDough Jombang - Toko Roti & Bomboloni Enak Viral',
+    description: 'Artisan Bakery di Jombang yang menyajikan Bomboloni lumer dan Japanese Soft Milk Bread premium.',
+    url: 'https://ohdoughbakery.com',
+    siteName: 'OhDough Jombang',
+    images: [
+      {
+        url: '/images/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'OhDough Premium Artisan Bakery',
+      },
+    ],
+    locale: 'id_ID',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'OhDough Jombang - Artisan Bakery',
+    description: 'Premium Bomboloni & Soft Milk Bread in Jombang.',
+    images: ['/images/og-image.png'],
+  },
 };
 
 const jsonLd = {
