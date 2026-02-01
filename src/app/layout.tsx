@@ -22,6 +22,23 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Bakery',
+  name: 'OhDough Jombang',
+  image: 'https://ohdoughbakery.com/images/ohdough_hero_composition_v10.png',
+  description: 'Artisan Bakery di Jombang yang menyajikan Bomboloni lumer dan Japanese Soft Milk Bread premium.',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Jombang',
+    addressRegion: 'Jawa Timur',
+    addressCountry: 'ID'
+  },
+  priceRange: '$',
+  telephone: '+6282139832969',
+  url: 'https://ohdoughbakery.com'
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -29,6 +46,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="id">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body>{children}</body>
     </html>
   );
