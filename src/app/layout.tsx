@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://ohdoughbakery.com'),
   title: 'OhDough Jombang - Toko Roti & Bomboloni Enak Viral',
   description: 'Temukan Bomboloni lumer, Roti Sobek Japanese Milk Bread lembut, dan oleh-oleh kekinian khas Jombang di OhDough. Halal, fresh made, dan harga mulai 8 ribuan. Kuliner wajib Jombang 2026!',
   keywords: [
