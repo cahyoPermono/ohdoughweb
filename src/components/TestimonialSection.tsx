@@ -18,9 +18,9 @@ const reviews = [
     rating: 5
   },
   {
-    name: "Sari W.",
-    role: "Foodie",
-    text: "Packaging estetik, rasa premium, harga bersahabat. Fix langganan buat snack acara kantor.",
+    name: "Cahyo",
+    role: "Food Vlogger & Reviewer",
+    text: "Ukuran donatnya JUMBO (100gr) dibanding pasaran yg cuma 70-80gr. Whipped cream-nya enak gak bikin eneg, topping melimpah ruah sampai 'messy' saking banjinya! Worth it banget buat yang cari kepuasan.",
     rating: 5
   }
 ];
